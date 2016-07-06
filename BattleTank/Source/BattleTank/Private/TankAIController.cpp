@@ -3,6 +3,13 @@
 #include "BattleTank.h"
 #include "TankAIController.h"
 
+// Sets default values
+void ATankAIController::Tick(float Deltatime)
+{
+	Super::Tick(Deltatime);
+	//UE_LOG(LogTemp, Warning, TEXT("AI Controller Tick"));
+}
+
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
